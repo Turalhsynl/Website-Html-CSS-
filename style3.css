@@ -1,0 +1,289 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background: linear-gradient(270deg, #0d56c5, #00A8AA);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    margin: 10px;
+    background-color: rgba(135, 206, 250, 0.308);
+    border-radius: 200px;
+}
+
+.playstation_logo{
+    width: 175px;
+    height: 150px;
+}
+.searchBox {
+    position: absolute;
+    top: 3%;
+    left: 55%;
+    transform:  translate(-50%,50%);
+    background: #ffffffd8;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: rgb(255, 255, 255);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search_button_logo{
+    width: 25px;
+    height: 25px;
+}
+
+.header{
+    position: relative;
+}
+
+.ul_header {
+    display: flex;
+    list-style-type: none;
+}
+
+.header_elements {
+    margin-top: 3%;
+    font-size: xx-large;
+    margin-left: 6%;
+    transition: text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+.header_elements:hover{
+    transform: scale(1.1);
+    text-decoration: underline white;
+}
+
+.button_sign {
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.button_sign_el{
+    margin-left: 40%;
+}
+
+.user_icon{
+    margin-top: 30%;
+    margin-left: 85%;
+    width: 90px;
+    height: 90px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.shop_li a{
+    text-decoration: none;
+    color: #0d56c5;
+}
+.home_li a{
+    text-decoration: none;
+    color: white;
+}
+
+.shop_li{
+    text-decoration: underline;
+    color: #0d56c5;
+    transition: text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+.shop_li:hover{
+    transform: scale(1.1);
+    text-decoration: underline #0d56c5;
+}
+
+.footer_div{
+    margin-top: 10%;
+    background: rgba(135, 206, 250, 0.517);
+    width: 100%;
+    height: 500px;
+}
+.social_ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.social_icon{
+    width: 125px;
+    height: 125px;
+    margin-left: 50px;
+}
+
+.social_ul span{
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.social_ul li{
+    transition: transform 0.3s ease;
+}
+
+.social_ul li:hover{
+    transform: scale(1.1);
+}
+
+.social_ul span:hover{
+    text-decoration: underline solid;
+}
+
+.my_name{
+    font-style: italic;
+}
+
+.copyright{
+    font-size: x-large;
+    background: #0d56c5;
+    text-align: center;
+    margin-top: 1%;
+}
+.phone_number{
+    margin-top: 7%;
+    margin-left: 1%;
+    font-size: x-large;
+}
+
+/*  */
+.container {
+    position: relative;
+    margin: 75px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.container .card{
+    border: 5px solid white;
+    position: relative;
+    background: #ccc;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.container .card:hover {
+    box-shadow: 0 1px 20px 4px rgba(255, 255, 255, 0.329);
+}
+
+.container .card:hover .content{
+    text-shadow: 0em 0em 1em black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.container .card .img-box {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    filter: blur(5px);
+}
+
+.container .card .img-box img{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.54s;
+}
+
+.container .card:hover .content {
+    bottom: 10%;
+} 
+
+.container .card:nth-child() .content {
+    background: linear-gradient(0deg, #183188, transparent);
+}
+
+.container .card .content h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+.container .card .content h2 span {
+    color: #ffeb3b;
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+  color: #fff;
+}
+.pages_container{
+    margin-left: 28%;
+}
+.pages_container ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 40px;
+}
+.pages_container li{
+    margin-left: 5%;
+}
+.first_page{
+    text-decoration: underline;
+    color: #183188;
+}
+.pages_container .no_underline{
+    text-decoration: none;
+    color: white;
+}
+.pages_container a{
+    transition: 1s;
+}
+.pages_container a:hover{
+    text-decoration: underline;
+}
